@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum9</title>
+    <script>
+        function luaslingkaran() {
+            const phi = 3.14;
+            let jari_jari = document.getElementById ("jari-jari");
+            console.log = ("Jari-Jari" + jari_jari);
+            let luas = phi * jari_jari * jari_jari;
+            let keliling = 2.0 * phi * jari_jari
+            console.log ("Luas : " + luas);
+            console.log ("kelling : " + keliling);
+            let are_hasil = document.getElementById ("hasil")
+            are_hasil.innerHTML = "luas : " +luas+"dan keliling : "+keliling;
+        }
+    </script>
+</head>
+<body>
+    <a href="index2.html"> Penjumlahan </a>|
+    Keliling dan Luas lingkaran
+    <a href="index3.html">Menghitung kurs Rupiah</a>
+    <a href="index4.html">Biaya Parkir</a>
+
+    <br>
+    <hr>
+    <br>
+
+    <fieldset>
+        <hr>
+        <h1>Menghitung keliling dan luas lingkaran</h1>
+        Masukan Jari-Jari :
+        <input type="number" value="" id="jari-jari">
+        <button onclick="luaslingakran()">Menghitung keliling dan luas lingkaran</button>
+        <br>
+        <h2>hasil</h2> <span id="hasil"></span>
+        <br>
+        <hr>    
+    </fieldset>
+</body>
+</html>
